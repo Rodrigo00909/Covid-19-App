@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import moment from 'moment';
+import Article from '../Article/Article';
 
 import logo from '../../logo.svg';
 
@@ -28,20 +28,19 @@ const FetchData = () => {
                 <section className="data grid grid-cols-1 gap-10 p-10 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4" >
                     {countries.map(country => {
                         const {ID, Country, CountryCode, NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, TotalRecovered, Date} = country;
-
                         return (
-                            <article className="Cards px-5 py-4 rounded-lg" key={ID}>
-                                <h2 className="Card-title text-4xl font-bold">{Country}, {CountryCode}</h2>
-                                <ul className="Card">
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Ultimos casos confirmados:</span> {NewConfirmed}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Total de casos confirmados:</span> {TotalConfirmed}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Ultimas muertes:</span> {NewDeaths}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Total de casos de muerte:</span> {TotalDeaths}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Nuevos recuperados:</span> {NewRecovered}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Total de recuperados:</span> {TotalRecovered}</li>
-                                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Fecha actual:</span> {moment(`${Date}`).format("MM/DD/YYYY")}</li>
-                                </ul>
-                            </article>
+                            <Article 
+                                ID={ID}
+                                Country={Country}
+                                CountryCode={CountryCode}
+                                NewConfirmed={NewConfirmed}
+                                TotalConfirmed={TotalConfirmed}
+                                NewDeaths={NewDeaths}
+                                TotalDeaths={TotalDeaths}
+                                NewRecovered={NewRecovered}
+                                TotalRecovered={TotalRecovered}
+                                Date={Date}
+                            />
                         )
                     })}
                 </section>
