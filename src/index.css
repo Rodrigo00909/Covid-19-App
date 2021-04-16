@@ -6,5 +6,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #D5E8E4;
+  background-color: var(--bg-color);
+}
+
+.light-theme {
+  --bg-color: #D5E8E4;
+  --cards-bg: #c3dfd8;
+  --card-title: #0d2d03;
+  --card: #3a756a;
+  --header: rgb(72 109 70);
+}
+
+.dark-theme {
+  --bg-color: #1e3a34;
+  --cards-bg: #0b2720;
+  --card-title: #f2ffee;
+  --card: #00b493;
+  --header: rgb(75 209 70);
+}
+.Cards {
+  background-color: var(--cards-bg);
+}
+
+.Card-title {
+  color: var(--card-title);
+}
+
+.Card {
+  color: var(--card);
+}
+
+.Header-sub-title,
+.Header-dev {
+  color: var(--header);
 }

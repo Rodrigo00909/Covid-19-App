@@ -26,17 +26,7 @@
     }
 }
 
-.Cards {
-    background-color: #c3dfd8;
-}
 
-.Card-title {
-    color: #0d2d03;
-}
-
-.Card {
-    color: #3a756a;
-}
 
 @media (min-width: 1600px) {
     .data {
