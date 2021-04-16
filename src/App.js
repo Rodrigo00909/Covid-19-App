@@ -1,4 +1,4 @@
-import FetchData from './FetchData';
+import FetchData from '../src/components/FetchData/FetchData';
 
 function App() {
   return (
