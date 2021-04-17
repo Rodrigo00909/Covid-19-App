@@ -5,4 +5,11 @@
     justify-content: center;
 }
 
+@media (min-width: 529px) {
+    .Header-title {
+        font-size: calc(5px + 2vmin);
+        height: 40vmin;
+    }
+}
+
 

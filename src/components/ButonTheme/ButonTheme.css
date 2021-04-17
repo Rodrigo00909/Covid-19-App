@@ -1,0 +1,7 @@
+.Theme {
+    display: flex;
+    max-width: 90%;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+

@@ -18,11 +18,11 @@ body {
 }
 
 .dark-theme {
-  --bg-color: #1e3a34;
-  --cards-bg: #0b2720;
-  --card-title: #f2ffee;
-  --card: #00b493;
-  --header: rgb(75 209 70);
+  --bg-color: #2d2d2d;
+  --cards-bg: #1e1e1f;
+  --card-title: #04C1B7;
+  --card: #13674F;
+  --header: #00b493;
 }
 .Cards {
   background-color: var(--cards-bg);
@@ -39,4 +39,8 @@ body {
 .Header-sub-title,
 .Header-dev {
   color: var(--header);
+}
+
+.Theme-text {
+  color: var(--card);
 }
