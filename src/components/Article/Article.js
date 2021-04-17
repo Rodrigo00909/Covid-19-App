@@ -13,7 +13,7 @@ const Article = ({ID, Country, CountryCode, NewConfirmed, TotalConfirmed, NewDea
                     <li className="my-3 flex items-center justify-between"><span className="font-bold">Total de casos de muerte:</span> {TotalDeaths}</li>
                     <li className="my-3 flex items-center justify-between"><span className="font-bold">Nuevos recuperados:</span> {NewRecovered}</li>
                     <li className="my-3 flex items-center justify-between"><span className="font-bold">Total de recuperados:</span> {TotalRecovered}</li>
-                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Fecha actual:</span> {moment(`${Date}`).format("DD/MM/YYYY")}</li>
+                    <li className="my-3 flex items-center justify-between"><span className="font-bold">Fecha actual:</span> {moment(`${Date}`).format("MM/DD/YYYY")}</li>
                 </ul>
             </article>
         </div>
